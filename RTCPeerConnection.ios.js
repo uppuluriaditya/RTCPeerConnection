@@ -31,7 +31,7 @@ export default class _RTCPeerConnection extends RTCPeerConnection {
      * @param  {...any} args - The parameters such as Ice Config.
      */
     constructor(...args: any[]) {
-        super(args);
+        super(...args);
 
         this.onaddstream = (
                 ...args // eslint-disable-line no-shadow
